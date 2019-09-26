@@ -1,0 +1,255 @@
+// .header-holder {
+// 	position: relative;
+// 	background: $pink-gray;
+// 	 .container:first-child {
+// 		padding: 0;
+// 	}
+//   }
+
+
+// .header {
+// 	background: $black;
+// 	padding: 15px;
+// 	color: $base-text-color-reverse;
+// 	@media (min-width: 768px) and (orientation: landscape){
+// 		padding: 0;
+// 	}
+// 	nav {
+// 		display: inline-block;
+// 		vertical-align: top;
+
+// 		@media (min-width: 768px){
+// 			display: block;
+// 			overflow: hidden;
+// 		}
+
+// 		&:hover {
+
+// 			.nav {
+// 				transform: translateX(0);
+// 			}
+// 		}
+// 	}
+// }
+
+
+
+
+
+// .nav-opener {
+// 	display: inline-block;
+// 	vertical-align: top;
+// 	width: 50px;
+// 	height: 50px;
+// 	position: relative;
+// 	border: 2px solid $white;
+// 	border-radius: 4px;
+
+// 	li {
+// 		display: inline-block;
+// 	}
+
+// 	&:before,
+// 	&:after,
+// 	span {
+// 		height: 4px;
+// 		width: 30px;
+// 		position: absolute;
+// 		left: 8px;
+// 		background: $white;
+// 		border-radius: 2px;
+// 	}
+
+// 	&:before,
+// 	&:after {
+// 		content: '';
+// 		transition: .3s transform;
+// 	}
+
+
+// 	&:before {
+// 		top: 10px;
+// 	}
+
+// 	&:after {
+// 		top: 34px;
+// 	}
+
+// 	span {
+// 		top: 22px;
+// 		transition: .3s opacity;
+// 	}
+
+// 	&:hover {
+// 		span {
+// 			opacity: 0;
+// 		}
+
+// 		&:before {
+// 			transform: rotate(45deg) translate(8px, 8px);
+// 		}
+
+// 		&:after {
+// 			transform: rotate(-45deg) translate(8px, -8px);
+// 		}
+
+// 		@media (min-width: 768px){
+// 			+ .nav {
+// 				max-height: 50vh;
+// 			}
+// 		}
+
+// 	}
+// 	@media (min-width: 768px) and (orientation: landscape){
+// 		display: none;
+// 	}
+// }
+
+// .nav {
+// 	position: absolute;
+// 	top: 80px;
+// 	left: 0;
+// 	right: 0;
+// 	background: $black;
+// 	transform: translateX(-100%);
+// 	transition: .3s transform;
+// 	list-style: none;
+// 	padding: 0 15px 10px;
+// 	text-align: center;
+// 	margin: 0;
+// 	@media (min-width: 768px) {
+// 		position: static;
+// 		transform: none;
+// 		max-height: 0;
+// 		transition: .3s max-height;
+// 		li:first-child {
+// 			padding-top: 15px;
+// 		}
+// 	}
+
+// 	@media (min-width: 768px) and (orientation: landscape){
+// 		display: flex;
+// 		justify-content: center;
+// 		max-height: none;
+// 		margin-bottom: 0;
+// 		padding: 0;
+// 	}
+// 	li {
+// 		&:last-child {
+// 			a {
+// 				border-bottom: none;
+// 			}
+
+// 		}
+// 	}
+
+// 	a {
+// 		display: block;
+// 		color: $base-text-color-reverse;
+// 		padding: 15px;
+// 		border-bottom: 2px solid $white;
+// 		text-transform: uppercase;
+// 		text-decoration: none;
+// 		font-size: 18px;
+// 		transition: .3s background-color;
+
+// 		@media (min-width: 768px) and (orientation: landscape){
+// 			border-bottom: 0;
+// 		}
+// 		&.active,
+// 		&:hover {
+// 			background: $red;
+// 		}
+// 	}
+// }
+
+// .our-organization {
+// 	padding: 0 0 30px;
+// 	text-align: center;
+// 	min-height: 180px;
+// }
+
+// .header-text-wrap {
+// 	padding-bottom: 15px;
+// }
+
+// .our-video {
+// 	box-shadow: 0 14px 73px 0 rgba(0, 0, 0, 0.29);
+// 	position: relative;
+
+// 	&:before {
+// 		content: "";
+// 		display: block;
+// 		padding-top: 56.25%;
+// 	}
+
+// 	iframe {
+// 		width: 100%;
+// 		height: 100%;
+// 		top: 0;
+// 		left: 0;
+// 		position: absolute;
+
+// 	}
+// }
+
+
+
+// @media (min-width: 768px) {
+
+// 	.header-holder {
+// 		.container {
+// 			padding: 0 15px;
+// 		}
+// 	}
+
+// 	.our-organization {
+
+// 		h1 {
+// 			padding: 0;
+// 		}
+// 	}
+// 	.our-video {
+// 		margin: 0;
+// 	}
+// }
+
+// @media (min-width: 768px) and (orientation: landscape){
+// 	.nav {
+// 		li:first-child {
+// 			padding-top: 0;
+// 		}
+// 	}
+// }
+
+// @media (min-width: 1200px) {
+
+// 	.about {
+// 		.column {
+// 			flex-direction: row;
+// 		}
+// 	}
+
+// 	.our-organization {
+// 		min-height: 400px;
+// 		text-align: left;
+// 		display: flex;
+// 		flex-direction: column;
+// 		justify-content: space-between;
+// 		padding-bottom: 0;
+
+// 		&-linkc {
+// 			text-align: center;
+// 			margin-top: 60px;
+// 		}
+
+// 		h1 	{
+// 			margin-bottom: 30px;
+// 			font-size: 60px;
+// 			padding: 0;
+// 		}
+// 		.btn {
+// 			min-width: 210px;
+// 		}
+// }
+// }
