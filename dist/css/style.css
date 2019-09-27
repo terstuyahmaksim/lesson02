@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
 
 
 
@@ -71,6 +72,11 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
 }
 
 mark {
@@ -313,10 +319,23 @@ ul {
 #wrapper {
   overflow: hidden;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .container {
-  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 155px;
+  }
 }
 
 .row {
@@ -325,6 +344,78 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+h2 {
+  position: relative;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 50px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  font-family: "Titillium Web";
+  font-weight: 700;
+}
+
+h2:after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid;
+  width: 87px;
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    line-height: 25x;
+    font-family: "Titillium Web";
+    font-weight: 700;
+  }
+
+  h2:after {
+    border-bottom: 3px solid;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    line-height: 30px;
+    font-family: "Titillium Web";
+    font-weight: 700;
+  }
+
+  h2:after {
+    border-bottom: 4px solid;
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
 }
 
 .nav {
@@ -392,4 +483,118 @@ ul {
 .services-provide {
   background-color: #17C2A4;
   color: #FFF;
+  padding-top: 50px;
+}
+
+.services-provide .services-provide__subtitle {
+  padding-bottom: 40px;
+  max-width: 603px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.services-provide .services-provide__content-holder {
+  padding: 0 20px;
+}
+
+.services-provide .services-provide__content-holder > h4 {
+  padding-bottom: 15px;
+  font-size: 24px;
+  letter-spacing: 0px;
+  line-height: 18px;
+  font-family: "Titillium Web";
+  font-weight: 700;
+}
+
+.services-provide .services-provide__content-holder:last-child {
+  padding-bottom: 40px;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  font-family: "Titillium Web";
+  font-weight: 300;
+  text-align: center;
+}
+
+.services-provide .services-provide__img {
+  padding-bottom: 40px;
+  height: 190px;
+}
+
+@media (min-width: 768px) {
+  .services-provide {
+    padding-top: 90px;
+  }
+
+  .services-provide .services-provide__subtitle {
+    padding-bottom: 60px;
+  }
+
+  .services-provide .services-provide__content-holder {
+    padding: 0 30px;
+    margin: 0 10px;
+  }
+
+  .services-provide .services-provide__content-holder > h4 {
+    padding-bottom: 20px;
+  }
+
+  .services-provide .services-provide__content-holder:last-child {
+    padding-bottom: 60px;
+  }
+
+  .services-provide .services-provide__img {
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .services-provide {
+    padding-top: 120px;
+  }
+
+  .services-provide .services-provide__img {
+    padding-bottom: 60px;
+  }
+
+  .services-provide .services-provide__subtitle {
+    padding-bottom: 80px;
+  }
+
+  .services-provide .services-provide__content-holder {
+    max-width: 200px;
+    padding: 0;
+  }
+
+  .services-provide .services-provide__content-holder > h4 {
+    padding-bottom: 20px;
+  }
+
+  .services-provide .services-provide__content-holder:last-child {
+    padding-bottom: 128px;
+  }
+}
+
+.team {
+  background-color: #e7f1f8;
+}
+
+.skilss {
+  background-color: #fff;
+}
+
+.portfolio {
+  background-color: #ffdd99;
+}
+
+.people-say {
+  background-color: #d74680;
+}
+
+.form {
+  background-color: #3c5499;
+}
+
+.footer {
+  background-color: #344b8e;
 }

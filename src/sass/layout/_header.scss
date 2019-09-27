@@ -1,19 +1,86 @@
-
 #wrapper {
 	overflow: hidden;
 	max-width: 1440px;
+	margin: 0 auto;
 }
 .container {
-  margin: 0 auto;
+	padding: 0 20px;
+	@media (min-width: $md) {
+		padding: 0 100px;
+  }
+  
+  @media (min-width: $lg) {
+		padding: 0 155px;
+	}
 }
 .row {
 	display: flex;
 	flex-wrap: wrap;
 }
+.center {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+p {
+	margin: 0;
+}
+h2 {
+	position: relative;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 50px;
+
+	font-size: 20px;
+	letter-spacing: 2px;
+	line-height: 20px;
+	font-family: "Titillium Web";
+	font-weight: 700;
+
+	&:after {
+		position: absolute;
+		content: "";
+		border-bottom: 2px solid;
+		width: 87px;
+		transform: translateY(40px);
+	}
+
+	@media (min-width: $md) {
+		font-size: 30px;
+		letter-spacing: 3px;
+		line-height: 25x;
+		font-family: "Titillium Web";
+		font-weight: 700;
+
+		&:after {
+			border-bottom: 3px solid;
+			transform: translateY(50px)
+		}
+  }
+  
+  @media (min-width: $lg) {
+		font-size: 40px;
+		letter-spacing: 4px;
+		line-height: 30px;
+		font-family: "Titillium Web";
+		font-weight: 700;
+
+		&:after {
+			border-bottom: 4px solid;
+			transform: translateY(50px)
+		}
+	}
+
+} 
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
 .nav {
 	background-color: #87509c;
 	width: 100%;
 }
+
 @media (min-width: $sm) {
 	// #toggle {
 	// 	display: none;
