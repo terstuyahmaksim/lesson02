@@ -1,36 +1,53 @@
+////--------------
+h4,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+li,
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+//---------------
 #wrapper {
 	overflow: hidden;
 	max-width: 1440px;
 	margin: 0 auto;
 }
+
 .container {
 	padding: 0 20px;
+
 	@media (min-width: $md) {
 		padding: 0 100px;
-  }
-  
-  @media (min-width: $lg) {
+	}
+
+	@media (min-width: $lg) {
 		padding: 0 155px;
 	}
 }
+
 .row {
 	display: flex;
 	flex-wrap: wrap;
 }
+
 .center {
 	display: flex;
 	justify-content: center;
 	text-align: center;
 }
-p {
-	margin: 0;
-}
+
 h2 {
 	position: relative;
 	margin: 0;
 	display: flex;
 	justify-content: center;
-	padding-bottom: 50px;
+	padding-bottom: 48px;
 
 	font-size: 20px;
 	letter-spacing: 2px;
@@ -57,9 +74,9 @@ h2 {
 			border-bottom: 3px solid;
 			transform: translateY(50px)
 		}
-  }
-  
-  @media (min-width: $lg) {
+	}
+
+	@media (min-width: $lg) {
 		font-size: 40px;
 		letter-spacing: 4px;
 		line-height: 30px;
@@ -72,27 +89,31 @@ h2 {
 		}
 	}
 
-} 
+}
 
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 
+
+////----------------------------
 .nav {
 	background-color: #87509c;
 	width: 100%;
 }
 
 @media (min-width: $sm) {
+
 	// #toggle {
 	// 	display: none;
 	// }
 	.nav__logo {
 		padding: 20px;
 	}
+
 	.nav__list {
 		background-color: #fff;
 		display: flex;
 		flex-direction: column;
 	}
+
 	.nav__list-item {
 		padding: 10px;
 	}
@@ -103,11 +124,13 @@ h2 {
 		flex-direction: row;
 		justify-content: flex-end;
 	}
+
 	.nav__logo {
 		padding-left: 105px;
 		padding-top: 30px;
 	}
-	.nav__list{
+
+	.nav__list {
 		background-color: red;
 	}
 }
@@ -117,7 +140,8 @@ h2 {
 		padding-left: 210px;
 		padding-top: 60px;
 	}
-	.nav__list{
+
+	.nav__list {
 		background-color: green;
 	}
 }
