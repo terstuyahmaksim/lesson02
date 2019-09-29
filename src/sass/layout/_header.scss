@@ -12,6 +12,21 @@ ul {
 	margin: 0;
 }
 
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	// *zoom: 0;
+
+}
+
 //---------------
 #wrapper {
 	overflow: hidden;
