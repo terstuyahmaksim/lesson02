@@ -55,14 +55,6 @@ h2 {
 	font-family: "Titillium Web";
 	font-weight: 700;
 
-	&:after {
-		position: absolute;
-		content: "";
-		border-bottom: 2px solid;
-		width: 87px;
-		transform: translateY(40px);
-	}
-
 	@media (min-width: $md) {
 		font-size: 30px;
 		letter-spacing: 3px;
@@ -71,8 +63,11 @@ h2 {
 		font-weight: 700;
 
 		&:after {
+			position: absolute;
+			content: "";
 			border-bottom: 3px solid;
-			transform: translateY(50px)
+			width: 87px;
+			transform: translateY(40px);
 		}
 	}
 
