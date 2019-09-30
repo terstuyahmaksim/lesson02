@@ -68,25 +68,21 @@ h2 {
 	@media (min-width: $md) {
 		font-size: 30px;
 		letter-spacing: 3px;
-		line-height: 25x;
+		line-height: 40px;
 
-		&:after {
-			position: absolute;
-			content: "";
-			border-bottom: 3px solid;
-			width: 87px;
-			transform: translateY(40px);
-		}
-	}
 
 	@media (min-width: $lg) {
 		font-size: 40px;
 		letter-spacing: 4px;
 		line-height: 30px;
 
-		&:after {
-			border-bottom: 4px solid;
-			transform: translateY(50px)
+		&:after {			
+			position: absolute;
+			content: "";
+			border-bottom: 3px solid;
+			width: 87px;
+			transform: translateY(40px);
+		}
 		}
 	}
 

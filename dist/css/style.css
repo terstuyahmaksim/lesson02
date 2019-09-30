@@ -392,7 +392,15 @@ h2 {
   h2 {
     font-size: 30px;
     letter-spacing: 3px;
-    line-height: 25x;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
+  h2 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    line-height: 30px;
   }
 
   h2:after {
@@ -402,20 +410,6 @@ h2 {
     width: 87px;
     -webkit-transform: translateY(40px);
     transform: translateY(40px);
-  }
-}
-
-@media (min-width: 1024px) {
-  h2 {
-    font-size: 40px;
-    letter-spacing: 4px;
-    line-height: 30px;
-  }
-
-  h2:after {
-    border-bottom: 4px solid;
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
   }
 }
 
@@ -1121,7 +1115,7 @@ h2 {
 
 .people-say {
   background-color: #d74680;
-  padding-top: 119px;
+  padding-top: 50px;
   font-weight: 400;
   font-family: "Titillium Web";
   color: #fff;
@@ -1130,12 +1124,9 @@ h2 {
 .people-say .people-say__title {
   padding-left: 6px;
   letter-spacing: 4.6px;
-  font-size: 39px;
-  padding-bottom: 43px;
-}
-
-.people-say .people-say__title:after {
-  color: #b73c6d;
+  font-size: 20px;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .people-say .people-say__subtitle {
@@ -1147,56 +1138,166 @@ h2 {
   margin-bottom: 65px;
 }
 
-.people-say .people-say__content-holder {
+.people-say .people-say__img-holder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 30px;
-}
-
-.people-say .people-say__img-holder {
-  padding-right: 48px;
-  padding-left: 15px;
-  padding-bottom: 210px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 .people-say .people-say__comment {
-  padding-top: 5px;
   font-size: 21px;
-  letter-spacing: 0.35px;
   line-height: 31px;
   font-style: italic;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .people-say .people-say__name {
-  font-size: 24px;
-  letter-spacing: 0.5px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  padding-bottom: 1px;
   text-transform: uppercase;
-  padding-left: 3px;
+  text-align: left;
 }
 
 .people-say .people-say__position {
-  font-size: 18px;
-  letter-spacing: 0.5px;
-  padding-left: 3px;
+  font-size: 16px;
   line-height: 26px;
   color: #ffdd99;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
-.people-say .people-say__img-holder--riht {
-  margin-left: 22px;
+@media (min-width: 768px) {
+  .people-say {
+    padding-top: 80px;
+  }
+
+  .people-say .people-say__title {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  .people-say .people-say__subtitle {
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 40px;
+  }
+
+  .people-say .people-say__content-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .people-say .people-say__img-holder {
+    display: block;
+    margin-right: 10px;
+  }
+
+  .people-say .people-say__comment {
+    font-size: 21px;
+    line-height: 31px;
+    font-style: italic;
+    padding-bottom: 21px;
+    text-align: left;
+  }
+
+  .people-say .people-say__name {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .people-say .people-say__position {
+    font-size: 18px;
+    line-height: 26px;
+    color: #ffdd99;
+  }
 }
 
-.people-say .people-say__img-holder--cuted {
-  padding-bottom: 200px;
-}
+@media (min-width: 1024px) {
+  .people-say {
+    padding-top: 119px;
+  }
 
-.people-say .people-say__comment--right {
-  letter-spacing: -0.4px;
+  .people-say .people-say__title {
+    padding-left: 6px;
+    letter-spacing: 4.6px;
+    font-size: 39px;
+    padding-bottom: 43px;
+  }
+
+  .people-say .people-say__title:after {
+    color: #b73c6d;
+  }
+
+  .people-say .people-say__subtitle {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin-left: 4px;
+    line-height: 26px;
+    margin-bottom: 65px;
+  }
+
+  .people-say .people-say__content-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-right: 30px;
+  }
+
+  .people-say .people-say__img-holder {
+    padding-right: 48px;
+    padding-left: 15px;
+    padding-bottom: 210px;
+  }
+
+  .people-say .people-say__comment {
+    padding-top: 5px;
+    font-size: 21px;
+    letter-spacing: 0.35px;
+    line-height: 31px;
+    font-style: italic;
+    padding-bottom: 21px;
+  }
+
+  .people-say .people-say__name {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    line-height: 26px;
+    font-weight: 700;
+    padding-bottom: 1px;
+    text-transform: uppercase;
+    padding-left: 3px;
+  }
+
+  .people-say .people-say__position {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding-left: 3px;
+    line-height: 26px;
+    color: #ffdd99;
+  }
+
+  .people-say .people-say__img-holder--riht {
+    margin-left: 22px;
+  }
+
+  .people-say .people-say__img-holder--cuted {
+    padding-bottom: 200px;
+  }
+
+  .people-say .people-say__comment--right {
+    letter-spacing: -0.4px;
+  }
 }
 
 .form {

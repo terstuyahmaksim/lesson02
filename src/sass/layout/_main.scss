@@ -566,18 +566,16 @@
 
 .people-say {
   background-color: #d74680;
-  padding-top: 119px;
+  padding-top: 50px;
   font-weight: 400;
   font-family: "Titillium Web";
   color: #fff;
   .people-say__title {
     padding-left: 6px;
     letter-spacing: 4.6px;
-    font-size: 39px;
-    padding-bottom: 43px;
-    &:after {
-      color: #b73c6d;
-    }
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: center;
   }
   .people-say__subtitle {
     text-align: center;
@@ -587,49 +585,133 @@
     line-height: 26px;
     margin-bottom: 65px;
   }
-  .people-say__content-holder {
-    display: flex;
-    padding-right: 30px;
-  }
   .people-say__img-holder {
-    padding-right: 48px;
-    padding-left: 15px;
-    padding-bottom: 210px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
   }
   .people-say__comment {
-    //max-width: 350px;
-    padding-top: 5px;
     font-size: 21px;
-    letter-spacing: 0.35px;
     line-height: 31px;
     font-style: italic;
-    padding-bottom: 21px;
+    padding-bottom: 20px;
+    text-align: center;
   }
   .people-say__name {
-    font-size: 24px;
-    letter-spacing: 0.5px;
+    font-size: 18px;
     line-height: 26px;
     font-weight: 700;
-    padding-bottom: 1px;
     text-transform: uppercase;
-    padding-left: 3px;
+    text-align: left;
     
   }
   .people-say__position {
-    font-size: 18px;
-    letter-spacing: 0.5px;
-    padding-left: 3px;
+    font-size: 16px;
     line-height: 26px;
     color: #ffdd99;
+    text-align: left;
+    margin-bottom: 30px;
   }
-  .people-say__img-holder--riht {
-    margin-left: 22px;
+  @media (min-width: $md) {
+    padding-top: 80px;
+    .people-say__title {
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+    .people-say__subtitle {
+      text-align: center;
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 40px;
+    }
+    .people-say__content-holder {
+      display: flex;
+    }
+    .people-say__img-holder {
+      display: block;
+      margin-right: 10px;
+    }
+    .people-say__comment {
+      font-size: 21px;
+      line-height: 31px;
+      font-style: italic;
+      padding-bottom: 21px;
+      text-align: left;
+    }
+    .people-say__name {
+      font-size: 24px;
+      line-height: 26px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .people-say__position {
+      font-size: 18px;
+      line-height: 26px;
+      color: #ffdd99;
+    }
   }
-  .people-say__img-holder--cuted {
-    padding-bottom: 200px;
-  }
-  .people-say__comment--right {
-    letter-spacing: -0.4px;
+  @media (min-width: $lg) {
+    padding-top: 119px;
+    .people-say__title {
+      padding-left: 6px;
+      letter-spacing: 4.6px;
+      font-size: 39px;
+      padding-bottom: 43px;
+      &:after {
+        color: #b73c6d;
+      }
+    }
+    .people-say__subtitle {
+      text-align: center;
+      font-size: 18px;
+      letter-spacing: 0.5px;
+      margin-left: 4px;
+      line-height: 26px;
+      margin-bottom: 65px;
+    }
+    .people-say__content-holder {
+      display: flex;
+      padding-right: 30px;
+    }
+    .people-say__img-holder {
+      padding-right: 48px;
+      padding-left: 15px;
+      padding-bottom: 210px;
+    }
+    .people-say__comment {
+      padding-top: 5px;
+      font-size: 21px;
+      letter-spacing: 0.35px;
+      line-height: 31px;
+      font-style: italic;
+      padding-bottom: 21px;
+    }
+    .people-say__name {
+      font-size: 24px;
+      letter-spacing: 0.5px;
+      line-height: 26px;
+      font-weight: 700;
+      padding-bottom: 1px;
+      text-transform: uppercase;
+      padding-left: 3px;
+      
+    }
+    .people-say__position {
+      font-size: 18px;
+      letter-spacing: 0.5px;
+      padding-left: 3px;
+      line-height: 26px;
+      color: #ffdd99;
+    }
+    .people-say__img-holder--riht {
+      margin-left: 22px;
+    }
+    .people-say__img-holder--cuted {
+      padding-bottom: 200px;
+    }
+    .people-say__comment--right {
+      letter-spacing: -0.4px;
+    }
   }
 }
 
