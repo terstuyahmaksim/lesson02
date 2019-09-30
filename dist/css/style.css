@@ -1121,6 +1121,82 @@ h2 {
 
 .people-say {
   background-color: #d74680;
+  padding-top: 119px;
+  font-weight: 400;
+  font-family: "Titillium Web";
+  color: #fff;
+}
+
+.people-say .people-say__title {
+  padding-left: 6px;
+  letter-spacing: 4.6px;
+  font-size: 39px;
+  padding-bottom: 43px;
+}
+
+.people-say .people-say__title:after {
+  color: #b73c6d;
+}
+
+.people-say .people-say__subtitle {
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin-left: 4px;
+  line-height: 26px;
+  margin-bottom: 65px;
+}
+
+.people-say .people-say__content-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 30px;
+}
+
+.people-say .people-say__img-holder {
+  padding-right: 48px;
+  padding-left: 15px;
+  padding-bottom: 210px;
+}
+
+.people-say .people-say__comment {
+  padding-top: 5px;
+  font-size: 21px;
+  letter-spacing: 0.35px;
+  line-height: 31px;
+  font-style: italic;
+  padding-bottom: 21px;
+}
+
+.people-say .people-say__name {
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  line-height: 26px;
+  font-weight: 700;
+  padding-bottom: 1px;
+  text-transform: uppercase;
+  padding-left: 3px;
+}
+
+.people-say .people-say__position {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding-left: 3px;
+  line-height: 26px;
+  color: #ffdd99;
+}
+
+.people-say .people-say__img-holder--riht {
+  margin-left: 22px;
+}
+
+.people-say .people-say__img-holder--cuted {
+  padding-bottom: 200px;
+}
+
+.people-say .people-say__comment--right {
+  letter-spacing: -0.4px;
 }
 
 .form {
