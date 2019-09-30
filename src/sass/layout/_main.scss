@@ -47,7 +47,7 @@
   }
 
   @media (min-width: $md) {
-    padding-top: 90px;
+    padding-top: 80px;
 
     .services-provide__subtitle {
       padding-bottom: 60px;
@@ -192,7 +192,7 @@
 
   @media (min-width: $md) {
 
-    padding-top: 70px;
+    padding-top: 80px;
 
     .team_title {
       padding-bottom: 45px;
@@ -365,9 +365,64 @@
 
 .skilss {
   background-color: #fff;
+  color: #3c4761;
+  padding-top: 50px;
+
+  .skilss__subtitle {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .skilss__indikator-holder {
+    margin-bottom: 20px;
+  }
 
   .skilss__indikator {
     margin-left: 15px;
+  }
+
+  .skilss__indikator-title {
+    font-size: 24px;
+    letter-spacing: 0px;
+    line-height: 18px;
+    color: #3c4761;
+    font-family: "Titillium Web";
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $md) {
+    padding-top: 80px;
+
+    .skilss__subtitle {
+      max-width: 568px;
+      margin-bottom: 83px;
+    }
+
+    .skilss__indikator-holder {
+
+      margin-bottom: 80px;
+    }
+  }
+
+  @media (min-width: $lg) {
+    padding-top: 117px;
+
+    .skilss__subtitle {
+      max-width: 568px;
+      margin-bottom: 83px;
+    }
+
+    .skilss__indikator-holder {
+
+      margin-bottom: 100px;
+    }
   }
 }
 

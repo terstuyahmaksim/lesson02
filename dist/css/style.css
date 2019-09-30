@@ -532,7 +532,7 @@ h2 {
 
 @media (min-width: 768px) {
   .services-provide {
-    padding-top: 90px;
+    padding-top: 80px;
   }
 
   .services-provide .services-provide__subtitle {
@@ -688,7 +688,7 @@ h2 {
 
 @media (min-width: 768px) {
   .team {
-    padding-top: 70px;
+    padding-top: 80px;
   }
 
   .team .team_title {
@@ -874,10 +874,67 @@ h2 {
 
 .skilss {
   background-color: #fff;
+  color: #3c4761;
+  padding-top: 50px;
+}
+
+.skilss .skilss__subtitle {
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 26px;
+  font-family: "Titillium Web";
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.skilss .skilss__indikator-holder {
+  margin-bottom: 20px;
 }
 
 .skilss .skilss__indikator {
   margin-left: 15px;
+}
+
+.skilss .skilss__indikator-title {
+  font-size: 24px;
+  letter-spacing: 0px;
+  line-height: 18px;
+  color: #3c4761;
+  font-family: "Titillium Web";
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .skilss {
+    padding-top: 80px;
+  }
+
+  .skilss .skilss__subtitle {
+    max-width: 568px;
+    margin-bottom: 83px;
+  }
+
+  .skilss .skilss__indikator-holder {
+    margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .skilss {
+    padding-top: 117px;
+  }
+
+  .skilss .skilss__subtitle {
+    max-width: 568px;
+    margin-bottom: 83px;
+  }
+
+  .skilss .skilss__indikator-holder {
+    margin-bottom: 100px;
+  }
 }
 
 .portfolio {
