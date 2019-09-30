@@ -1300,8 +1300,105 @@ h2 {
   }
 }
 
-.form {
+.get-in-touch {
   background-color: #3c5499;
+}
+
+.get-in-touch .get-in-touch__input-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.get-in-touch .get-in-touch__input-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #273a71;
+  border-radius: 5px;
+  border: none;
+  line-height: 56px;
+  margin-right: 16px;
+}
+
+.get-in-touch .get-in-touch__input-name::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+}
+
+.get-in-touch .get-in-touch__input-name::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+}
+
+.get-in-touch .get-in-touch__input-name:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+}
+
+.get-in-touch .get-in-touch__input-name::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+}
+
+.get-in-touch .get-in-touch__input-name::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+}
+
+.get-in-touch .get-in-touch__input-name::-webkit-input-placeholder span {
+  color: red;
+}
+
+.get-in-touch .get-in-touch__input-name::-moz-placeholder span {
+  color: red;
+}
+
+.get-in-touch .get-in-touch__input-name:-ms-input-placeholder span {
+  color: red;
+}
+
+.get-in-touch .get-in-touch__input-name::-ms-input-placeholder span {
+  color: red;
+}
+
+.get-in-touch .get-in-touch__input-name::placeholder span {
+  color: red;
+}
+
+.get-in-touch .get-in-touch__input-mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #273a71;
+  border-radius: 5px;
+  border: none;
+  line-height: 56px;
+  margin-left: 16px;
+}
+
+.get-in-touch .input-placeholder {
+  position: relative;
+}
+
+.get-in-touch .input-placeholder input {
+  padding: 10px;
+  font-size: 25px;
+}
+
+.get-in-touch .input-placeholder input:valid + .placeholder {
+  display: none;
+}
+
+.get-in-touch .placeholder {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  bottom: 0;
+  height: 25px;
+  font-size: 25px;
+  left: 10px;
+  margin: auto;
+  color: #ccc;
+}
+
+.get-in-touch .placeholder span {
+  color: red;
 }
 
 .footer {

@@ -715,6 +715,57 @@
   }
 }
 
-.form {
+.get-in-touch {
   background-color: #3c5499;
+  .get-in-touch__input-holder {
+    display: flex;
+  }
+  .get-in-touch__input-name {
+    display: flex;
+    background-color: #273a71;
+    border-radius: 5px;
+    border: none;
+    line-height: 56px;
+    margin-right:16px;
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      span {color: red;}
+      //opacity: 1; /* Firefox */
+    }
+  }
+  .get-in-touch__input-mail {
+    display: flex;
+    background-color: #273a71;
+    border-radius: 5px;
+    border: none;
+    line-height: 56px;
+    margin-left:16px;
+  }
+
+  
+.input-placeholder {
+  position: relative;
+}
+.input-placeholder input {
+  padding: 10px;
+  font-size: 25px;
+}
+.input-placeholder input:valid + .placeholder {
+  display: none;
+}
+
+.placeholder {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  bottom: 0;
+  height: 25px;
+  font-size: 25px;
+  left: 10px;
+  margin: auto;
+  color: #ccc;
+}
+
+.placeholder span {
+  color: red;
+}
 }
