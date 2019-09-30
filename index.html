@@ -315,46 +315,47 @@
         </div>
       </section>
       <section class="container get-in-touch">
-        <h2>GET IN TOUCH</h2>
-        <p>1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
-        <div class="row get-in-touch__input-holder">
-            
-          <div class="row">
+        <h2 class="get-in-touch__title">GET IN TOUCH</h2>
+        <p class="get-in-touch__subtitle">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+          <div class="row get-in-touch__input-holder">
               <form novalidate class="col-lg-2 col-md-4 col-sm-4">
                   <div class="input-placeholder">
-                      <input type="text" required>
+                      <input class="get-in-touch__input-name" tabindex="1" type="text" required>
                       <div class="placeholder">
-                          Email <span>*</span>
+                          Your Name <span>*</span>
                       </div>
                   </div>
               </form>
               <form novalidate class="col-lg-2 col-md-4 col-sm-4">
                   <div class="input-placeholder">
-                      <input type="text" required>
+                      <input class="get-in-touch__input-mail" tabindex="2" type="text" required>
                       <div class="placeholder">
-                          Email <span>*</span>
+                          Your Email <span>*</span>
+                      </div>
+                  </div>
+              </form>
+              <form class="col-lg-4 col-md-4 col-sm-4" novalidate>
+                  <div class="input-placeholder">
+                      <textarea class="get-in-touch__input-mess" tabindex="3" type="text" required></textarea>
+                      <div class="placeholder">
+                          Your Message <span>*</span>
                       </div>
                   </div>
               </form>
           </div>
-            
 
-          <input class="get-in-touch__input-name col-lg-2 col-md-4 col-sm-4" title="type your name here" name="name" type="text" placeholder="Your Name *" required>
-          <input class="get-in-touch__input-mail col-lg-2 col-md-4 col-sm-4" title="type your E-mail adress here" name="email" type="text" placeholder="Your Email *" required>
-        </div>
-        <textarea class="get-in-touch__textarea col-lg-4 col-md-4 col-sm-4" title="type your message" type="comment" placeholder="Your Message *"required></textarea>
-        <button></button>
+        <button class="get-in-touch__button">SEND MESSAGE</button>
       </section>
     </main>
     <footer class="container footer">
-      <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Google+</a></li>
-        <li><a href="#">LinkedIn</a></li>
-        <li><a href="#">Behance</a></li>
-        <li><a href="#">Dribbble</a></li>
-        <li><a href="#">GitHub</a></li>
+      <ul class="footer__list-holder">
+        <li class="footer__list-item"><a class="footer__link" href="#">Facebook</a></li>
+        <li class="footer__list-item"><a class="footer__link" href="#">Twitter</a></li>
+        <li class="footer__list-item"><a class="footer__link" href="#">Google+</a></li>
+        <li class="footer__list-item"><a class="footer__link" href="#">LinkedIn</a></li>
+        <li class="footer__list-item"><a class="footer__link" href="#">Behance</a></li>
+        <li class="footer__list-item"><a class="footer__link" href="#">Dribbble</a></li>
+        <li class="footer__list-item"><a class="footer__link" href="#">GitHub</a></li>
       </ul>
     </footer>
   </div>

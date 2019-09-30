@@ -1,3 +1,29 @@
 .footer {
   background-color: #344b8e;
+
+
+  .footer__list-holder {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 940px;
+  }
+  .footer__list-item {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .footer__link {
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: center;
+    &:hover {
+      color: #30bae7;
+    }
+  }
 }
