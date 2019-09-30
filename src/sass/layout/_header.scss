@@ -23,7 +23,7 @@ ul {
 }
 
 .clearfix {
-	// *zoom: 0;
+	*zoom: 0;
 
 }
 
@@ -33,24 +33,19 @@ ul {
 	max-width: 1440px;
 	margin: 0 auto;
 }
-
 .container {
 	padding: 0 20px;
-
 	@media (min-width: $md) {
 		padding: 0 100px;
 	}
-
 	@media (min-width: $lg) {
 		padding: 0 155px;
 	}
 }
-
 .row {
 	display: flex;
 	flex-wrap: wrap;
 }
-
 .center {
 	display: flex;
 	justify-content: center;
@@ -74,8 +69,6 @@ h2 {
 		font-size: 30px;
 		letter-spacing: 3px;
 		line-height: 25x;
-		font-family: "Titillium Web";
-		font-weight: 700;
 
 		&:after {
 			position: absolute;
@@ -90,8 +83,6 @@ h2 {
 		font-size: 40px;
 		letter-spacing: 4px;
 		line-height: 30px;
-		font-family: "Titillium Web";
-		font-weight: 700;
 
 		&:after {
 			border-bottom: 4px solid;
